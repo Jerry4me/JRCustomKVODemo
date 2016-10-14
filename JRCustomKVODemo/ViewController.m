@@ -39,6 +39,11 @@
     
 }
 
+- (void)dealloc
+{
+    [self.colorView jr_removeObserver:self.textLabel key:@"backgroundColor"];
+        
+}
 
 
 @end
